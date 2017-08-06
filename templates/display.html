@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>DisplayuserInfo</title>
+{% if result %}
+  <h1>Hello {{ name }}!</h1>
+  <h4>Query Result</h4>
+	<table border="1">
+	<tr>
+  		<td>{{name}}</td>
+  		<td>{{eval_p}}</td>
+      <td>{{eval_v}}</td>
+  		<td>{{score}}</td>
+	</tr>
+	</table>
+{% else %}
+  <h1>No result found</h1>
+{% endif %}
+</body>
+</html>
